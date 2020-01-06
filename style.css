@@ -1,0 +1,62 @@
+.header, .player {
+    background-color: #1493FF;
+    color: #fff;
+}
+
+td.projection {
+    background-color: green;
+}
+
+.val1 {
+    background-color: firebrick;
+    
+}
+
+.val2 {
+    background-color: gold;
+}
+
+.val3 {
+    background-color: lightgreen;
+}
+
+
+
+.proj1 {
+    display: none;
+}
+
+.proj2 {
+    background-color: greenyellow;
+}
+
+.proj3 {
+    background-color: green;
+}
+
+
+
+/* dvp conditional formatting */
+.dev1 {
+    background-color: red;
+}
+
+.dev2 {
+    background-color: orange;
+}
+
+.dev3 {
+    background-color: yellow;
+}
+
+.dev4 {
+    background-color: lightgreen;
+}
+.dev5 {
+    background-color: greenyellow;
+}
+.dev6 {
+    background-color: lime;
+}
+
+ 

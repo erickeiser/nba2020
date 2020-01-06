@@ -4,38 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
     <title>Today's NBA</title>
 </head>
 <body>
-    <table id="ex-table">
-        <tr id="tr">
-           <th>Player</th>
-           <th>Projection</th>
-           <th>Position</th>
-           <th>Team</th>
-           <th>DvP</th>
-           <th>Team TTL</th>
-           <th>Salary</th>
-           <th>Floor</th> 
-           <th>Celing</th> 
-           <th>FPPG</th> 
-           <th>FPPM</th> 
-           
-           <th>USG</th> 
-           <th>FGA</th> 
-           <th>MGP</th> 
-           <th>ProjMin</th> 
-           <th>proj</th> 
-           <th>Value</th>  
-        </tr>
+    <div class="container">
+        <input type="text" id="playerSearch" onkeyup="playerSearch()" placeholder="Search for player" title="Type in a name">
+        
+    <table class="table" id="ex-table">
+        <thead>
+           <th class="header">Player</th>
+           <th class="header">Pos</th>
+           <th class="header">Team</th>
+           <th class="header">Opp</th>
+           <th class="header">Salary</th>
+           <th class="header">Proj</th>
+           <th class="header">dvp</th>
+           <th class="header">Tm TTL</th>
+           <th class="header">Floor</th>
+           <th class="header">Ceiling</th>
+           <th class="header">fppg</th>
+           <th class="header">fppm</th>
+           <th class="header">usg</th>
+           <th class="header">mpg</th>
+           <th class="header">pmin</th> 
+           <th class="header">value</th> 
+        </thead>
+        <tbody id="playerData"></tbody>
     </table>
+</div>
     
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="tablesort.js"></script> 
+    
 </body>
 </html>
