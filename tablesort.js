@@ -18,6 +18,7 @@
     var Player = snap.child("Player").val()
     var Pos = snap.child("Pos").val()
     var Team = snap.child("Team").val()
+    var Game = snap.child("Game").val()
     var Opp = snap.child("Opp").val()
     var Salary = snap.child("Salary").val()
     var Projection = snap.child("Projection").val()
@@ -39,6 +40,13 @@
     rowP = 'rows'
     teamP = 'team'
     oppP = 'opp'
+    gameP = 'game'
+    minP = 'minutes'
+
+    if(pmin <= 0) {
+      rowP = 'hide'
+    }
+
   // add class for player logo
     if(Team === 'ATL') {
       teamP = 'atl'
@@ -99,6 +107,66 @@
     } else if(Team === 'WAS') {
       teamP = 'was'
     }
+    // Opponent Logos
+    if(Opp === 'ATL') {
+      oppP = 'atl'
+    } else if(Opp === 'BOS') {
+      oppP = 'bos'
+    } else if(Opp === 'BKN') {
+      oppP = 'bkn'
+    } else if(Opp === 'CHA') {
+      oppP = 'cha'
+    } else if(Opp === 'CHI') {
+      oppP = 'chi'
+    } else if(Opp === 'CLE') {
+      oppP = 'cle'
+    } else if(Opp === 'DAL') {
+      oppP = 'dal'
+    } else if(Opp === 'DEN') {
+      oppP = 'den'
+    } else if(Opp === 'DET') {
+      oppP = 'det'
+    } else if(Opp === 'GS') {
+      oppP = 'gs'
+    } else if(Opp === 'HOU') {
+      oppP = 'hou'
+    } else if(Opp === 'IND') {
+      oppP = 'ind'
+    } else if(Opp === 'LAC') {
+      oppP = 'lac'
+    } else if(Opp === 'LAL') {
+      oppP = 'lal'
+    } else if(Opp === 'MEM') {
+      oppP = 'mem'
+    } else if(Opp === 'MIA') {
+      oppP = 'mia'
+    } else if(Opp === 'MIL') {
+      oppP = 'mil'
+    } else if(Opp === 'MIN') {
+      oppP = 'min'
+    } else if(Opp === 'NOP') {
+      oppP = 'nop'
+    } else if(Opp === 'NYK') {
+      oppP = 'nyk'
+    } else if(Opp === 'OKC') {
+      oppP = 'okc'
+    } else if(Opp === 'ORL') {
+      oppP = 'orl'
+    } else if(Opp === 'PHI') {
+      oppP = 'phi'
+    } else if(Opp === 'PHX') {
+      oppP = 'phx'
+    } else if(Opp === 'POR') {
+      oppP = 'por'
+    } else if(Opp === 'SAC') {
+      oppP = 'sac'
+    } else if(Opp === 'SAN') {
+      oppP = 'san'
+    } else if(Opp === 'TOR') {
+      oppP = 'tor'
+    } else if(Opp === 'WAS') {
+      oppP = 'was'
+    }
 
     
 
@@ -108,7 +176,7 @@
     
 
     
-
+  
 
   
 
@@ -119,12 +187,12 @@
 
 
 
-    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team + "</td><td class='"+ oppP +"'>"+ Opp +"</td><td class='" + valP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td>"+ pmin +"</td><td>"+ Value +"</td></tr>")
+    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + valP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td>"+ Value +"</td></tr>")
 
     $(function() {
       $('#ex-table').tablesorter({
         theme: 'blue',
-        sortList: [[4,1]]
+        sortList: [[5,1]]
       })
     })
   })
