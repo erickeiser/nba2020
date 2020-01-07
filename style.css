@@ -223,7 +223,7 @@ thead {
 }
 
 /* SALARY CONDITIONAL FORMATTING */
-.highSal {
+.high {
     background-color: #FFC7Ce;
 }
 
@@ -231,7 +231,7 @@ thead {
     background-color: #F1A16D;
 }
 
-.medSal {
+.med {
     background-color: #FBC669;
 }
 
@@ -239,6 +239,6 @@ thead {
     background-color: #9DC67B ;
 }
 
-.lowSal {
+.low {
     background-color: #57BB8A;
 }

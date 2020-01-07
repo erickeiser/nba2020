@@ -34,7 +34,7 @@
     var Value = snap.child("Value").val()
     
     
-    valP = 'val'
+    salP = 'sal'
     projP = 'proj'
     devP = 'dvp'
     rowP = 'rows'
@@ -42,6 +42,7 @@
     oppP = 'opp'
     gameP = 'game'
     minP = 'minutes'
+    valP = 'val'
     
     //  HIDE PLAYERS WITH 0 PROJECTED MINUTES
     if(pmin <= 0) {
@@ -168,17 +169,40 @@
     } else if(Opp === 'WAS') {
       oppP = 'was'
     }
-
+    // SALARIES
     if(Salary > 9500) {
-      valP = 'highSal'
+      salP = 'high'
     } else if(Salary >= 7500 && Salary <=9499) {
-      valP = 'medHigh'
+      salP = 'medHigh'
     } else if(Salary >= 6500 && Salary <=7499) {
-      valP = 'medSal'
+      salP = 'med'
     } else if(Salary >= 4000 && Salary <= 6499) {
-      valP = 'medLow'
+      salP = 'medLow'
     } else if(Salary < 4000) {
-      valP = 'lowSal'
+      salP = 'low'
+    }
+
+    // PROJECTIONS CLASSES
+    if(Projection <= 20) {
+      projP = 'high'
+    } else if(Projection >=21 && Projection <= 28.99) {
+      projP = 'medHigh'
+    } else if(Projection >= 29 && Projection < 35.99) {
+      projP = 'med'
+    } else if(Projection >= 36 && Projection <= 45) {
+      projP = 'medLow'
+    } else {
+      projP = 'low'
+    }
+
+    if(Value <= 2.9) {
+      valP = 'high'
+    } else if(Value >= 3 && Value <= 3.9) {
+      valP = 'medHigh'
+    } else if(Value >= 4 && Value <= 4.9) {
+      valP = 'medLow'
+    } else if(Value => 5 && Value <= 5.5) {
+      valP = 'low'
     }
 
     
@@ -200,7 +224,7 @@
 
 
     // RENDER TABLE TO THE DOM
-    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + valP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td>"+ Value +"</td></tr>")
+    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + salP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td class='"+ valP +"'>"+ Value +"</td></tr>")
 
 
     // SORT TABLE * THIS IS SET TO [[5,1]] WHIH SORTS THE 5TH COLUMN DESCENDING *
