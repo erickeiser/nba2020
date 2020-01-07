@@ -1,220 +1,244 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 thead {
-    background-color: #1493ff;
-    color: #fff;
+  background-color: #1493ff;
+  color: #fff;
 }
 .container-fluid {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .header {
-    width: 100px;
+  width: 100px;
 }
 
 .header-player {
-    width: 400px;
+  width: 400px;
 }
 
 .game {
-    text-align: center;
-    width: 30px;
+  text-align: center;
+  width: 30px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
+/* Team and Opponent images */
+
 .atl {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/atlanta-hawks-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/atlanta-hawks-logo@logotyp.us.svg") no-repeat;
 }
 
 .bos {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/boston-celtics-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/boston-celtics-logo@logotyp.us.svg") no-repeat;
 }
 
 .bkn {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/brooklyn-nets-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/brooklyn-nets-logo@logotyp.us.svg") no-repeat;
 }
 
 .cha {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/charlotte-hornets-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/charlotte-hornets-logo@logotyp.us.svg") no-repeat;
 }
 
 .chi {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/chicago-bulls-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/chicago-bulls-logo@logotyp.us.svg") no-repeat;
 }
 
 .cle {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/cleveland-cavaliers-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/cleveland-cavaliers-logo@logotyp.us.svg") no-repeat;
 }
 
 .dal {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/dallas-mavericks-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/dallas-mavericks-logo@logotyp.us.svg") no-repeat;
 }
 
 .den {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/denver-nuggets-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/denver-nuggets-logo@logotyp.us.svg") no-repeat;
 }
 
 .det {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/detroit-pistons-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/detroit-pistons-logo@logotyp.us.svg") no-repeat;
 }
 
 .gsw {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/warriors-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/warriors-logo@logotyp.us.svg") no-repeat;
 }
- 
+
 .hou {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/houston-rockets-logo@logotyp.us.svg') no-repeat;
-} 
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/houston-rockets-logo@logotyp.us.svg") no-repeat;
+}
 
 .ind {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/indiana-pacers-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/indiana-pacers-logo@logotyp.us.svg") no-repeat;
 }
 
 .lac {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/la-clippers-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/la-clippers-logo@logotyp.us.svg") no-repeat;
 }
 
 .lal {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/la-lakers-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/la-lakers-logo@logotyp.us.svg") no-repeat;
 }
 
 .mem {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/memphis-grizzlies-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/memphis-grizzlies-logo@logotyp.us.svg") no-repeat;
 }
 
 .mia {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/miami-heat-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/miami-heat-logo@logotyp.us.svg") no-repeat;
 }
 
 .mil {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/milwaukee-bucks-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/milwaukee-bucks-logo@logotyp.us.svg") no-repeat;
 }
 
 .min {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/timberwolves-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/timberwolves-logo@logotyp.us.svg") no-repeat;
 }
 
 .nop {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/pelicans-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/pelicans-logo@logotyp.us.svg") no-repeat;
 }
 
 .nyk {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/new-york-knicks-logo@logotyp.us.svg') no-repeat;
-} 
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/new-york-knicks-logo@logotyp.us.svg") no-repeat;
+}
 
 .okc {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/okc-thunder-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/okc-thunder-logo@logotyp.us.svg") no-repeat;
 }
 
 .orl {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/okc-thunder-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/okc-thunder-logo@logotyp.us.svg") no-repeat;
 }
 
 .phi {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/76ers-logo@logotyp.us.svg') no-repeat;
-} 
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/76ers-logo@logotyp.us.svg") no-repeat;
+}
 
 .phx {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/phoenix-suns-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/phoenix-suns-logo@logotyp.us.svg") no-repeat;
 }
 
 .por {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/portland-trail-blazers-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/portland-trail-blazers-logo@logotyp.us.svg")
+    no-repeat;
 }
 
 .sac {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/sacramento-kings-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/sacramento-kings-logo@logotyp.us.svg") no-repeat;
 }
 
 .san {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/spurs-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/spurs-logo@logotyp.us.svg") no-repeat;
 }
 
 .tor {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/toronto-raptors-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/toronto-raptors-logo@logotyp.us.svg") no-repeat;
 }
 
 .uta {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/utah-jazz-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/utah-jazz-logo@logotyp.us.svg") no-repeat;
 }
 
 .was {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/washington-wizards-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/washington-wizards-logo@logotyp.us.svg") no-repeat;
 }
 
 .atl {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/atlanta-hawks-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/atlanta-hawks-logo@logotyp.us.svg") no-repeat;
 }
 
 .atl {
-    text-indent: -9999px;
-    text-align: center;
-    background: url('/images/atlanta-hawks-logo@logotyp.us.svg') no-repeat;
+  text-indent: -9999px;
+  text-align: center;
+  background: url("/images/atlanta-hawks-logo@logotyp.us.svg") no-repeat;
+}
+
+/* SALARY CONDITIONAL FORMATTING */
+.highSal {
+    background-color: #FFC7Ce;
+}
+
+.medHigh {
+    background-color: #F1A16D;
+}
+
+.medSal {
+    background-color: #FBC669;
+}
+
+.medLow {
+    background-color: #9DC67B ;
+}
+
+.lowSal {
+    background-color: #57BB8A;
 }

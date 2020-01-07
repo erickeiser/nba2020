@@ -42,12 +42,13 @@
     oppP = 'opp'
     gameP = 'game'
     minP = 'minutes'
-
+    
+    //  HIDE PLAYERS WITH 0 PROJECTED MINUTES
     if(pmin <= 0) {
       rowP = 'hide'
     }
 
-  // add class for player logo
+  // ADD CLASS FOR TEAM LOGO
     if(Team === 'ATL') {
       teamP = 'atl'
     } else if(Team === 'BOS') {
@@ -107,7 +108,7 @@
     } else if(Team === 'WAS') {
       teamP = 'was'
     }
-    // Opponent Logos
+    // ADD CLASS FOR OPPONENT LOGO
     if(Opp === 'ATL') {
       oppP = 'atl'
     } else if(Opp === 'BOS') {
@@ -168,6 +169,18 @@
       oppP = 'was'
     }
 
+    if(Salary > 9500) {
+      valP = 'highSal'
+    } else if(Salary >= 7500 && Salary <=9499) {
+      valP = 'medHigh'
+    } else if(Salary >= 6500 && Salary <=7499) {
+      valP = 'medSal'
+    } else if(Salary >= 4000 && Salary <= 6499) {
+      valP = 'medLow'
+    } else if(Salary < 4000) {
+      valP = 'lowSal'
+    }
+
     
 
 
@@ -186,9 +199,11 @@
     
 
 
-
+    // RENDER TABLE TO THE DOM
     $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + valP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td>"+ Value +"</td></tr>")
 
+
+    // SORT TABLE * THIS IS SET TO [[5,1]] WHIH SORTS THE 5TH COLUMN DESCENDING *
     $(function() {
       $('#ex-table').tablesorter({
         theme: 'blue',
@@ -201,7 +216,7 @@
 
 
 
-    // Player search box
+    // PLAYER SEARCH BOX
     function playerSearch() {
       var input, filter, table, tr, td, i, txtValue;
       input = document.getElementById("playerSearch");
@@ -221,7 +236,7 @@
       }
     }
 
-     //  Refresh page every 5 minutes 
+     //  PAGE REFRESH * 300000 IS FOR 5 MINUTES *
   setTimeout(function(){
     window.location.href = window.location.href;
 },300000)
