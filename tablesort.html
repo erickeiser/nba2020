@@ -15,20 +15,41 @@
         padding: 10px;
     }
     </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
 </head>
 <body>
-    <table>
-       <thead>
-           <tr>
-               <th>Name</th>
-               <th onclick="sortColumn('age')">Age</th>
-           </tr>
-       </thead>
-       <tbody id="tableData"></tbody>
-    </table>
+    <h4>"First Name" column ascending sort appended to any other sort: <small id="result1"></small></h4>
+<table id="table1" class="tablesorter">
+  <thead>
+    <tr><th>First Name</th><th>Last Name</th><th>Age</th><th>Total</th><th>Discount</th><th>Date</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Peter</td><td>Parker</td><td>28</td><td>$9.99</td><td>20%</td><td>Jan 18, 2001 9:12 AM</td></tr>
+    <tr><td>John</td><td>Evans</td><td>33</td><td>$9.99</td><td>25%</td><td>Dec 10, 2002 5:14 AM</td></tr>
+    <tr><td>Clark</td><td>Kent</td><td>22</td><td>$15.89</td><td>44%</td><td>Jan 12, 2003 11:14 AM</td></tr>
+    <tr><td>Bruce</td><td>Almighty</td><td>45</td><td>$15.89</td><td>44%</td><td>Jan 18, 2001 9:12 AM</td></tr>
+    <tr><td>Bruce</td><td>Evans</td><td>22</td><td>$13.19</td><td>11%</td><td>Jul 6, 2006 8:14 AM</td></tr>
+  </tbody>
+</table>
+
+<h4>Append sorted column based on initially sorted column: <small id="result2"></small></h4>
+<table id="table2" class="tablesorter">
+  <thead>
+    <tr><th>First Name (+Last)</th><th>Last Name</th><th>Age (+Total)</th><th>Total</th><th>Discount (+Date & First)</th><th>Date</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Peter</td><td>Parker</td><td>28</td><td>$9.99</td><td>20%</td><td>Jan 18, 2001 9:12 AM</td></tr>
+    <tr><td>John</td><td>Evans</td><td>33</td><td>$9.99</td><td>25%</td><td>Dec 10, 2002 5:14 AM</td></tr>
+    <tr><td>Clark</td><td>Kent</td><td>22</td><td>$15.89</td><td>44%</td><td>Jan 12, 2003 11:14 AM</td></tr>
+    <tr><td>Bruce</td><td>Almighty</td><td>45</td><td>$15.89</td><td>44%</td><td>Jan 18, 2001 9:12 AM</td></tr>
+    <tr><td>Bruce</td><td>Evans</td><td>22</td><td>$13.19</td><td>11%</td><td>Jul 6, 2006 8:14 AM</td></tr>
+  </tbody>
+</table>
+
     
-
-
-    <script src="tablesort.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

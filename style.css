@@ -1,62 +1,179 @@
-.header, .player {
-    background-color: #1493FF;
+* {
+    margin: 0;
+    padding: 0;
+}
+thead {
+    background-color: #1493ff;
     color: #fff;
 }
-
-td.projection {
-    background-color: green;
+.container-fluid {
+    margin: 0 15px;
 }
 
-.val1 {
-    background-color: firebrick;
-    
+.header {
+    width: 150px;
 }
 
-.val2 {
-    background-color: gold;
+.header-player {
+    width: 400px;
 }
 
-.val3 {
-    background-color: lightgreen;
+.atl {
+    text-indent: -9999px;
+    background: url('/images/atlanta-hawks-logo@logotyp.us.svg') no-repeat;
 }
 
-
-
-.proj1 {
-    display: none;
+.bos {
+    text-indent: -9999px;
+    background: url('/images/boston-celtics-logo@logotyp.us.svg') no-repeat;
 }
 
-.proj2 {
-    background-color: greenyellow;
+.bkn {
+    text-indent: -9999px;
+    background: url('/images/brooklyn-nets-logo@logotyp.us.svg') no-repeat;
 }
 
-.proj3 {
-    background-color: green;
+.cha {
+    text-indent: -9999px;
+    background: url('/images/charlotte-hornets-logo@logotyp.us.svg') no-repeat;
 }
 
-
-
-/* dvp conditional formatting */
-.dev1 {
-    background-color: red;
+.chi {
+    text-indent: -9999px;
+    background: url('/images/chicago-bulls-logo@logotyp.us.svg') no-repeat;
 }
 
-.dev2 {
-    background-color: orange;
+.cle {
+    text-indent: -9999px;
+    background: url('/images/cleveland-cavaliers-logo@logotyp.us.svg') no-repeat;
 }
 
-.dev3 {
-    background-color: yellow;
+.dal {
+    text-indent: -9999px;
+    background: url('/images/dallas-mavericks-logo@logotyp.us.svg') no-repeat;
 }
 
-.dev4 {
-    background-color: lightgreen;
-}
-.dev5 {
-    background-color: greenyellow;
-}
-.dev6 {
-    background-color: lime;
+.den {
+    text-indent: -9999px;
+    background: url('/images/denver-nuggets-logo@logotyp.us.svg') no-repeat;
 }
 
+.det {
+    text-indent: -9999px;
+    background: url('/images/detroit-pistons-logo@logotyp.us.svg') no-repeat;
+}
+
+.gsw {
+    text-indent: -9999px;
+    background: url('/images/warriors-logo@logotyp.us.svg') no-repeat;
+}
  
+.hou {
+    text-indent: -9999px;
+    background: url('/images/houston-rockets-logo@logotyp.us.svg') no-repeat;
+} 
+
+.ind {
+    text-indent: -9999px;
+    background: url('/images/indiana-pacers-logo@logotyp.us.svg') no-repeat;
+}
+
+.lac {
+    text-indent: -9999px;
+    background: url('/images/la-clippers-logo@logotyp.us.svg') no-repeat;
+}
+
+.lal {
+    text-indent: -9999px;
+    background: url('/images/la-lakers-logo@logotyp.us.svg') no-repeat;
+}
+
+.mem {
+    text-indent: -9999px;
+    background: url('/images/memphis-grizzlies-logo@logotyp.us.svg') no-repeat;
+}
+
+.mia {
+    text-indent: -9999px;
+    background: url('/images/miami-heat-logo@logotyp.us.svg') no-repeat;
+}
+
+.mil {
+    text-indent: -9999px;
+    background: url('/images/milwaukee-bucks-logo@logotyp.us.svg') no-repeat;
+}
+
+.min {
+    text-indent: -9999px;
+    background: url('/images/timberwolves-logo@logotyp.us.svg') no-repeat;
+}
+
+.nop {
+    text-indent: -9999px;
+    background: url('/images/pelicans-logo@logotyp.us.svg') no-repeat;
+}
+
+.nyk {
+    text-indent: -9999px;
+    background: url('/images/new-york-knicks-logo@logotyp.us.svg') no-repeat;
+} 
+
+.okc {
+    text-indent: -9999px;
+    background: url('/images/okc-thunder-logo@logotyp.us.svg') no-repeat;
+}
+
+.orl {
+    text-indent: -9999px;
+    background: url('/images/okc-thunder-logo@logotyp.us.svg') no-repeat;
+}
+
+.phi {
+    text-indent: -9999px;
+    background: url('/images/76ers-logo@logotyp.us.svg') no-repeat;
+} 
+
+.phx {
+    text-indent: -9999px;
+    background: url('/images/phoenix-suns-logo@logotyp.us.svg') no-repeat;
+}
+
+.por {
+    text-indent: -9999px;
+    background: url('/images/portland-trail-blazers-logo@logotyp.us.svg') no-repeat;
+}
+
+.sac {
+    text-indent: -9999px;
+    background: url('/images/sacramento-kings-logo@logotyp.us.svg') no-repeat;
+}
+
+.san {
+    text-indent: -9999px;
+    background: url('/images/spurs-logo@logotyp.us.svg') no-repeat;
+}
+
+.tor {
+    text-indent: -9999px;
+    background: url('/images/toronto-raptors-logo@logotyp.us.svg') no-repeat;
+}
+
+.uta {
+    text-indent: -9999px;
+    background: url('/images/utah-jazz-logo@logotyp.us.svg') no-repeat;
+}
+
+.was {
+    text-indent: -9999px;
+    background: url('/images/washington-wizards-logo@logotyp.us.svg') no-repeat;
+}
+
+.atl {
+    text-indent: -9999px;
+    background: url('/images/atlanta-hawks-logo@logotyp.us.svg') no-repeat;
+}
+
+.atl {
+    text-indent: -9999px;
+    background: url('/images/atlanta-hawks-logo@logotyp.us.svg') no-repeat;
+}

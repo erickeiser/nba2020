@@ -30,13 +30,79 @@
     var usg = snap.child("usg").val()
     var mpg = snap.child("mpg").val()
     var pmin = snap.child("pmin").val()
-    var value = snap.child("value").val()
+    var Value = snap.child("Value").val()
     
-    playerP = 'person'
+    
     valP = 'val'
     projP = 'proj'
     devP = 'dvp'
     rowP = 'rows'
+    teamP = 'team'
+    oppP = 'opp'
+  // add class for player logo
+    if(Team === 'ATL') {
+      teamP = 'atl'
+    } else if(Team === 'BOS') {
+      teamP = 'bos'
+    } else if(Team === 'BKN') {
+      teamP = 'bkn'
+    } else if(Team === 'CHA') {
+      teamP = 'cha'
+    } else if(Team === 'CHI') {
+      teamP = 'chi'
+    } else if(Team === 'CLE') {
+      teamP = 'cle'
+    } else if(Team === 'DAL') {
+      teamP = 'dal'
+    } else if(Team === 'DEN') {
+      teamP = 'den'
+    } else if(Team === 'DET') {
+      teamP = 'det'
+    } else if(Team === 'GS') {
+      teamP = 'gs'
+    } else if(Team === 'HOU') {
+      teamP = 'hou'
+    } else if(Team === 'IND') {
+      teamP = 'ind'
+    } else if(Team === 'LAC') {
+      teamP = 'lac'
+    } else if(Team === 'LAL') {
+      teamP = 'lal'
+    } else if(Team === 'MEM') {
+      teamP = 'mem'
+    } else if(Team === 'MIA') {
+      teamP = 'mia'
+    } else if(Team === 'MIL') {
+      teamP = 'mil'
+    } else if(Team === 'MIN') {
+      teamP = 'min'
+    } else if(Team === 'NOP') {
+      teamP = 'nop'
+    } else if(Team === 'NYK') {
+      teamP = 'nyk'
+    } else if(Team === 'OKC') {
+      teamP = 'okc'
+    } else if(Team === 'ORL') {
+      teamP = 'orl'
+    } else if(Team === 'PHI') {
+      teamP = 'phi'
+    } else if(Team === 'PHX') {
+      teamP = 'phx'
+    } else if(Team === 'POR') {
+      teamP = 'por'
+    } else if(Team === 'SAC') {
+      teamP = 'sac'
+    } else if(Team === 'SAN') {
+      teamP = 'san'
+    } else if(Team === 'TOR') {
+      teamP = 'tor'
+    } else if(Team === 'WAS') {
+      teamP = 'was'
+    }
+
+    
+
+
 
 
     
@@ -53,7 +119,14 @@
 
 
 
-    $("table").append("<tr class='"+ rowP +"'><td class='"+ playerP +"'>"+ Player +"</td><td>" + Pos+ "</td><td>" + Team + "</td><td>"+ Opp +"</td><td class='" + valP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td>"+ pmin +"</td><td>"+ value +"</td></tr>")
+    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team + "</td><td class='"+ oppP +"'>"+ Opp +"</td><td class='" + valP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td>"+ pmin +"</td><td>"+ Value +"</td></tr>")
+
+    $(function() {
+      $('#ex-table').tablesorter({
+        theme: 'blue',
+        sortList: [[4,1]]
+      })
+    })
   })
 
 
