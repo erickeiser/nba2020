@@ -68,8 +68,8 @@
       teamP = 'den'
     } else if(Team === 'DET') {
       teamP = 'det'
-    } else if(Team === 'GS') {
-      teamP = 'gs'
+    } else if(Team === 'GSW') {
+      teamP = 'gsw'
     } else if(Team === 'HOU') {
       teamP = 'hou'
     } else if(Team === 'IND') {
@@ -102,14 +102,15 @@
       teamP = 'por'
     } else if(Team === 'SAC') {
       teamP = 'sac'
-    } else if(Team === 'SAN') {
-      teamP = 'san'
+    } else if(Team === 'SAS') {
+      teamP = 'sas'
     } else if(Team === 'TOR') {
       teamP = 'tor'
     } else if(Team === 'WAS') {
       teamP = 'was'
-    }
-    // ADD CLASS FOR OPPONENT LOGO
+    } else if(TEam === 'UTA'){
+      teamP = 'uta'
+    }    // ADD CLASS FOR OPPONENT LOGO
     if(Opp === 'ATL') {
       oppP = 'atl'
     } else if(Opp === 'BOS') {
@@ -128,8 +129,8 @@
       oppP = 'den'
     } else if(Opp === 'DET') {
       oppP = 'det'
-    } else if(Opp === 'GS') {
-      oppP = 'gs'
+    } else if(Opp === 'GSW') {
+      oppP = 'gsw'
     } else if(Opp === 'HOU') {
       oppP = 'hou'
     } else if(Opp === 'IND') {
@@ -162,12 +163,14 @@
       oppP = 'por'
     } else if(Opp === 'SAC') {
       oppP = 'sac'
-    } else if(Opp === 'SAN') {
-      oppP = 'san'
+    } else if(Opp === 'SAS') {
+      oppP = 'sas'
     } else if(Opp === 'TOR') {
       oppP = 'tor'
     } else if(Opp === 'WAS') {
       oppP = 'was'
+    } else if(Opp === 'UTA') {
+      oppP = 'uta'
     }
     // SALARIES
     if(Salary > 9500) {
@@ -264,6 +267,8 @@
   setTimeout(function(){
     window.location.href = window.location.href;
 },300000)
+
+
 
   
   
