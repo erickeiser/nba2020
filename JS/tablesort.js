@@ -108,7 +108,7 @@
       teamP = 'tor'
     } else if(Team === 'WAS') {
       teamP = 'was'
-    } else if(TEam === 'UTA'){
+    } else if(Team === 'UTA'){
       teamP = 'uta'
     }    // ADD CLASS FOR OPPONENT LOGO
     if(Opp === 'ATL') {
