@@ -173,7 +173,7 @@
       oppP = 'uta'
     }
     // SALARIES
-    if(Salary > 9500) {
+    if(Salary >= 9500) {
       salP = 'high'
     } else if(Salary >= 7500 && Salary <=9499) {
       salP = 'medHigh'

@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-    td, th {
-        border: 1px solid #333;
-        padding: 10px;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    <title>NBA DAILY GAMES</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+
+        <script src="https://gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+
+      
+
+        <link rel="stylesheet" href="/CSS/main.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>NBA DFS</h1>
+    <button type="button" style="margin-right: 50px" class="myButton">Today</button>
+    <button type="button" style="margin-right: 50px" class="myButton">DK Projections</button>
+    <button type="button" style="margin-right: 50px" class="myButton">FD Projections</button>
+
+  </div>
+
+  <div class="tbPos">
+
+    <H4>Games for<h4 style="border:2px; border-style:solid; border-color: black; width:120px;" id="date"></h4></H4>
+
+    <table id="table" class="table tablesorter" width="90%" align="center">
+        <thead>
+          <tr>
+            <td style="background-color: rgba(29, 151, 182, 0.562)" colspan='7'>Todays Games</td>
+            <th style="background-color: rgb(240, 161, 14)" colspan='6'>DvP</th>
+          </tr>
+          <tr>
+          
+          <th class="header" width="7%">Team</th>
+          <th class="header" width="5%">Opponent</th> 
+          <th class="header" width="8%">Team Tot</th>
+          <th class="header" width="7%">Spread</th>
+          <th class="header" width="8%">Pace</th>
+          <th class="header" width="8%">OPP Pace</th>
+          <th class="header" width="8%">Pace Diff</th>
+          <th class="header" width="8%">Defense</th>
+          <th class="header" width="8%">PG</th>
+          <th class="header" width="8%">SG</th>
+          <th class="header" width="8%">SF</th>
+          <th class="header" width="8%">PF</th>
+          <th class="header" width="8%">C</th>
+          </tr>
+          </thead>
+          <tbody id="dvpRank"></tbody>
+
+          
+      </table>
+
+  
+
+  </div >
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
-</head>
-<body>
-    <h4>"First Name" column ascending sort appended to any other sort: <small id="result1"></small></h4>
-<table id="table1" class="tablesorter">
-  <thead>
-    <tr><th>First Name</th><th>Last Name</th><th>Age</th><th>Total</th><th>Discount</th><th>Date</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Peter</td><td>Parker</td><td>28</td><td>$9.99</td><td>20%</td><td>Jan 18, 2001 9:12 AM</td></tr>
-    <tr><td>John</td><td>Evans</td><td>33</td><td>$9.99</td><td>25%</td><td>Dec 10, 2002 5:14 AM</td></tr>
-    <tr><td>Clark</td><td>Kent</td><td>22</td><td>$15.89</td><td>44%</td><td>Jan 12, 2003 11:14 AM</td></tr>
-    <tr><td>Bruce</td><td>Almighty</td><td>45</td><td>$15.89</td><td>44%</td><td>Jan 18, 2001 9:12 AM</td></tr>
-    <tr><td>Bruce</td><td>Evans</td><td>22</td><td>$13.19</td><td>11%</td><td>Jul 6, 2006 8:14 AM</td></tr>
-  </tbody>
-</table>
 
-<h4>Append sorted column based on initially sorted column: <small id="result2"></small></h4>
-<table id="table2" class="tablesorter">
-  <thead>
-    <tr><th>First Name (+Last)</th><th>Last Name</th><th>Age (+Total)</th><th>Total</th><th>Discount (+Date & First)</th><th>Date</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Peter</td><td>Parker</td><td>28</td><td>$9.99</td><td>20%</td><td>Jan 18, 2001 9:12 AM</td></tr>
-    <tr><td>John</td><td>Evans</td><td>33</td><td>$9.99</td><td>25%</td><td>Dec 10, 2002 5:14 AM</td></tr>
-    <tr><td>Clark</td><td>Kent</td><td>22</td><td>$15.89</td><td>44%</td><td>Jan 12, 2003 11:14 AM</td></tr>
-    <tr><td>Bruce</td><td>Almighty</td><td>45</td><td>$15.89</td><td>44%</td><td>Jan 18, 2001 9:12 AM</td></tr>
-    <tr><td>Bruce</td><td>Evans</td><td>22</td><td>$13.19</td><td>11%</td><td>Jul 6, 2006 8:14 AM</td></tr>
-  </tbody>
-</table>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+  crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
+  <script src="/JS/main.js"></script>
+  
 
-    
-<script src="main.js"></script>
 </body>
 </html>

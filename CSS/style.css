@@ -10,6 +10,10 @@ thead {
   margin: 0 15px;
 }
 
+.main-table {
+  margin-top: 5%;
+}
+
 .header {
   width: 100px;
 }
