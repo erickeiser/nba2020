@@ -10,26 +10,29 @@ thead {
   margin: 0 15px;
 }
 
+.main-header {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #1493ff;
+}
+
 .main-table {
   margin-top: 5%;
 }
 
-.header {
-  width: 100px;
-}
-
 .header-player {
-  width: 400px;
+  width: 14%;
 }
 
 .game {
-  text-align: center;
-  width: 30px;
+  width: 5px;
 }
 
 .hide {
   display: none;
 }
+
+
 
 /* Team and Opponent images */
 

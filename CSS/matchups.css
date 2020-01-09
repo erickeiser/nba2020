@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 th, td {
     text-align: center;
 }
@@ -5,6 +10,18 @@ th, td {
 td {
     border: 1px solid #ccc;
 }
+
+.main-table {
+  margin-top: 5%;
+}
+
+/* HEADING */
+.main-heading {
+  text-align: center;
+  font-size: 4.4rem;
+}
+
+
 /* Team and Opponent images */
 
 .atl {

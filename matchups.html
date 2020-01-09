@@ -13,11 +13,13 @@
     <title>Today's NBA</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
+        <h1 class="main-heading">Today's Matchups</h1>
+        <hr>
         <input type="text" id="playerSearch" onkeyup="playerSearch()" placeholder="Search for player" title="Type in a name">
-        <a href="index.html">Projections</a>
+        <a href="/index.html" class="btn btn-primary" role="button">Fanduel Projections</a>
         
-    <table class="table tablesorter" id="ex-table">
+    <table class="table tablesorter main-table" id="ex-table">
         <thead>
            <th class="header header-player">Team</th>
            <th class="header">Opp</th>
