@@ -18,10 +18,19 @@
         <input type="text" id="playerSearch" onkeyup="playerSearch()" placeholder="Search for player" title="Type in a name">
         
        <a href="/matchups.html" class="btn btn-primary" role="button">Matchups</a>
+
+       <div id="games" class="games">
+           <button class="btn btn-primary" id="all">All</button>
+        <button class="btn btn-primary" id="pg">PG</button>
+        <button class="btn btn-primary" id="sg">SG</button>
+        <button class="btn btn-primary" id="sf">SF</button>
+        <button class="btn btn-primary" id="pf">PF</button>
+        <button class="btn btn-primary" id="c">C</button>
+    </div>
         
     <table class="table tablesorter main-table" id="ex-table">
         <thead>
-           <th class="header header-player" width="3%">Player</th>
+           <th class="header header-player">Player</th>
            <th class="header header-pos">Pos</th>
            <th class="header header-team">Team</th>
            <th class="header header-game">Game</th>

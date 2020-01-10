@@ -6,42 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/CSS/matchups.css">
+    
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
 
     <title>Today's NBA</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="main-heading">Today's Matchups</h1>
-        <hr>
-        <input type="text" id="playerSearch" onkeyup="playerSearch()" placeholder="Search for player" title="Type in a name">
-        <a href="/index.html" class="btn btn-primary" role="button">Fanduel Projections</a>
+    <div id="dropdown">
 
-       
-        
-    <table class="table tablesorter main-table" id="ex-table">
-        <thead>
-           <th class="header header-player">Team</th>
-           <th class="header">Opp</th>
-           <th class="header">Team Total</th>
-           <th class="header">Spread</th>
-           <th class="header">Pace</th>
-           <th class="header">Opp Pace</th>
-           <th class="header">Pace Diff</th>
-           <th class="header">DvP Rank</th>
-           <th class="header">PG</th>
-           <th class="header">SG</th>
-           <th class="header">SF</th>
-           <th class="header">PF</th>
-           <th class="header">C</th>
-           
-        </thead>
-        <tbody id="playerData"></tbody>
-    </table>
-</div>
-    
+    </div>
+   
 
 <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -53,8 +28,7 @@ crossorigin="anonymous"></script>
   
 <script src="/JS/jquery.tablesorter.js"></script>
    
-    <script src="/JS/matchups.js"></script> 
-    <script src="/JS/games.js"></script>
+  
     
 </body>
-</html>
+</html> 

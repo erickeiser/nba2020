@@ -36,6 +36,7 @@
     
     salP = 'sal'
     projP = 'proj'
+    posP = 'pos'
     devP = 'dvp'
     rowP = 'rows'
     teamP = 'team'
@@ -44,10 +45,7 @@
     minP = 'minutes'
     valP = 'val'
     
-    //  HIDE PLAYERS WITH 0 PROJECTED MINUTES
-    if(pmin <= 0) {
-      rowP = 'hide'
-    }
+   
 
   // ADD CLASS FOR TEAM LOGO
     if(Team === 'ATL') {
@@ -208,9 +206,77 @@
       valP = 'low'
     }
 
+    if(Pos === 'PG') {
+      posP = 'pg'
+      rowP = 'pg'
+    } else if(Pos === 'SG') {
+      posP = 'sg'
+      rowP = 'sg'
+    } else if(Pos === 'SF') {
+      posP = 'sf'
+      rowP = 'sf'
+    } else if(Pos === 'PF') {
+      posP = 'pf'
+      rowP = 'pf'
+    } else {
+      posP = 'c'
+      rowP = 'c'
+    }
+
     
+    $('#all').click(function(){
+      $('.sg').show()
+      $('.pg').show()
+      $('.sf').show()
+      $('.pf').show()
+      $('.c').show()
+    })
 
 
+    $('#pg').click(function(){
+      $('.pg').show()
+      $('.sg').hide()
+      $('.sf').hide()
+      $('.pf').hide()
+      $('.c').hide()
+    })
+
+    $('#sg').click(function(){
+      $('.sg').show()
+      $('.pg').hide()
+      $('.sf').hide()
+      $('.pf').hide()
+      $('.c').hide()
+    })
+
+    $('#sf').click(function(){
+      $('.sf').show()
+      $('.pg').hide()
+      $('.sg').hide()
+      $('.pf').hide()
+      $('.c').hide()
+    })
+
+    $('#pf').click(function(){
+      $('.pf').show()
+      $('.pg').hide()
+      $('.sg').hide()
+      $('.sf').hide()
+      $('.c').hide()
+    })
+
+    $('#c').click(function(){
+      $('.c').show()
+      $('.pg').hide()
+      $('.sg').hide()
+      $('.sf').hide()
+      $('.pf').hide()
+    })
+
+     //  HIDE PLAYERS WITH 0 PROJECTED MINUTES
+     if(pmin <= 0) {
+      rowP = 'hide'
+    }
 
 
     
@@ -227,7 +293,7 @@
 
 
     // RENDER TABLE TO THE DOM
-    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + salP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td class='"+ valP +"'>"+ Value +"</td></tr>")
+    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td class='"+ posP +"'>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + salP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td class='"+ valP +"'>"+ Value +"</td></tr>")
 
 
     // SORT TABLE * THIS IS SET TO [[5,1]] WHIH SORTS THE 5TH COLUMN DESCENDING *

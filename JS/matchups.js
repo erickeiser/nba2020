@@ -40,6 +40,10 @@
     sfP = 'sf'
     pfP = 'pf'
     cP = 'c'
+
+
+    // BUTTON SEARCH
+    
     
    
     
@@ -108,6 +112,7 @@
       teamP = 'uta'
      }   
      
+     
      // ADD CLASS FOR OPPONENT LOGO
     if(Opp === 'ATL') {
       oppP = 'atl'
@@ -155,7 +160,7 @@
       oppP = 'orl'
     } else if(Opp === 'PHI') {
       oppP = 'phi'
-    } else if(Opp === 'PHX') {
+    } else if(Opp === 'PHO') {
       oppP = 'phx'
     } else if(Opp === 'POR') {
       oppP = 'por'
@@ -289,6 +294,9 @@
     }
 
 
+
+  
+
    
 
   
@@ -319,16 +327,16 @@
     $(function() {
       $('#ex-table').tablesorter({
         theme: 'blue',
-        sortList: [[2,1]]
+        sortList: [[6,1]]
       })
     })
-  })
+   })  // END FUNCTION
 
 
 
 
 
-    // PLAYER SEARCH BOX
+    //PLAYER SEARCH BOX
     function playerSearch() {
       var input, filter, table, tr, td, i, txtValue;
       input = document.getElementById("playerSearch");
@@ -348,10 +356,18 @@
       }
     }
 
+    
+
+
+
      //  PAGE REFRESH * 300000 IS FOR 5 MINUTES *
   setTimeout(function(){
     window.location.href = window.location.href;
 },300000)
+
+
+
+
 
 
 
