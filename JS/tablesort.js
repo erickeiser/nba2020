@@ -205,7 +205,8 @@
     } else if(Value => 5 && Value <= 5.5) {
       valP = 'low'
     }
-
+    
+    //  POSITION FILTER CLASSES
     if(Pos === 'PG') {
       posP = 'pg'
       rowP = 'pg'
