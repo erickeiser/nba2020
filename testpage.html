@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/testpage.css">
+
+    <!-- FIREBASE CONNECT -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase.js"></script>
+
+    <title>test Data</title>
+   
+  </head>
+  <body>
+      <div class="container">
+          <div id="page_links">
+              <button id="matchupToggle" class="btn btn-primary pageToggle">Matchups</button>
+              <button id="projectionToggle" class="btn btn-primary pageToggle">Projections</button>
+            </div>
+            <div id="games">
+                <button id="gameOne" class="btn btn-lg gameOne gameOneBox"></button>
+                <button id="gameTwo" class="btn btn-lg gameTwo"></button>
+                <button id="gameThree" class="btn btn-lg gameThree"></button>
+                <button id="gameFour" class="btn btn-lg gameFour"></button>
+                <button id="gameFive" class="btn btn-lg gameFive"></button>
+                <button id="gameSix" class="btn btn-lg gameSix"></button>
+                <button id="gameSeven" class="btn btn-lg gameSeven"></button>
+                <button id="gameEight" class="btn btn-lg gameEight"></button>
+                <button id="gameNine" class="btn btn-lg gameNine"></button>
+                <button id="gameTen" class="btn btn-lg gameTen"></button>
+                <button id="gameEleven" class="btn btn-lg gameEleven"></button>
+                <button id="gameTwelve" class="btn btn-lg gameTwelve"></button>
+                <button id="gameThirteen" class="btn btn-lg gameThirteen"></button>
+                <button id="gameFourteen" class="btn btn-lg gameFourteen"></button>
+                <button id="gameFifteen" class="btn btn-lg gameFifteen"></button>
+            </div>
+             
+              
+          <div id="projection_table" class="projection_table">
+              <table id="projections" class="table">
+                  <thead>
+                      <tr>
+                          <th>value</th>
+                          <th>Player</th>
+                          <th>Position</th>
+                          <th>TM</th>
+                          <th>Game</th>
+                          <th>Opp</th>
+                          <th>Salary</th>
+                          <th>Projection</th>
+                          <th>DvP</th>
+                          <th>Tm Total</th>
+                          <th>Floor</th>
+                          <th>Ceiling</th>
+                          <th>FPPG</th>
+                          <th>FPPM</th>
+                          <th>Usage</th>
+                          <th>MPG</th>
+                          <th>P Min</th>
+                          <th>FPPM</th>
+                          
+
+                      </tr>
+                  </thead>
+                  <tbody id="projection_table" class="table"></tbody>
+              </table>
+          </div>
+         
+      <div id="matchup_table" class="matchup_table">
+        <table id="matchups" class="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Team</th>
+                    <th>Opp</th>
+                    <th>Team TTL</th>
+                    <th>Spread</th>
+                    <th>Pace</th>
+                    <th>Opp Pace</th>
+                    <th>Pace Diff</th>
+                    <th>DvP Rank</th>
+                    <th>PG</th>
+                    <th>SG</th>
+                    <th>SF</th>
+                    <th>PF</th>
+                    <th>C</th>
+                </tr>
+            </thead>
+            <tbody id="playerData"></tbody>
+        </table>
+    </div> <!-- END MATHUP_TABLE-->
+</div> <!-- END CONTAINER DIV   -->
+
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="/JS/testpage.js"></script>
+    <script src="/JS/projection.js"></script>
+  </body>
+</html>

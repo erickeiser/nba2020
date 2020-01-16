@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
 
     <link rel="stylesheet" href="/CSS/style.css">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -12,7 +13,7 @@
 
     <title>Today's NBA</title>
 </head>
-<body>
+<body id="body">
     <div class="container-fluid">
         <h1 class="main-header">Fanduel Projections</h1>
         
@@ -27,6 +28,25 @@
         <button class="btn btn-primary" id="pf">PF</button>
         <button class="btn btn-primary" id="c">C</button>
     </div>
+    
+       <table class="table-sm"> 
+           <thead>
+            <tr>
+                <td>team</td>
+                <td>Opp</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td id="teamOne"></td>
+                    <td id="teamTwo"></td>
+                    <td id="teamThree"></td>
+                    <td id="teamFour"></td>
+                </tr>
+            </tbody>
+           </thead>
+       </table>
+       
+    
     <h3>Player Search</h3>
     <input type="text" id="playerSearch" onkeyup="playerSearch()" placeholder="Search for player" title="Type in a name"> 
     <table class="table tablesorter main-table" id="ex-table">
@@ -64,7 +84,9 @@ crossorigin="anonymous"></script>
   
 <script src="/JS/jquery.tablesorter.js"></script>
    
-    <script src="/JS/tablesort.js"></script> 
+<script src="/JS/games.js"></script>
+<script src="/JS/tablesort.js"></script> 
+    
     
 </body>
 </html>

@@ -14,6 +14,7 @@
   // Pulling data from firebase into an HTML table
   var database = firebase.database();
   database.ref().on("child_added", snap =>{
+    let id = snap.child("id").val()
     var Team = snap.child("Team").val()
     var Opp = snap.child("Opp").val()
     var TeamTot = snap.child("TeamTot").val()
@@ -27,8 +28,11 @@
     var sf = snap.child("sf").val()
     var pf = snap.child("pf").val()
     var c = snap.child("c").val()
-    
+
+    id = 'id'
+    oppId = 'id'
     teamP = 'team'
+    teamID = 'team'
     oppP = 'opp'
     SpreadP = 'spread'
     PaceP = 'pace'
@@ -51,129 +55,221 @@
 
   // ADD CLASS FOR TEAM LOGO
     if(Team === 'ATL') {
-      teamP = 'atl'
+      teamP = 'ATL'
+      teamID = 'ATL'
+      id = 'one'
+      
     } else if(Team === 'BOS') {
-      teamP = 'bos'
+      teamP = 'BOS'
+      teamID = 'BOS'
+      id = 'two'
     } else if(Team === 'BKN') {
-      teamP = 'bkn'
+      teamP = 'BKN'
+      teamID = 'BKN'
+      id = 'three'
     } else if(Team === 'CHA') {
-      teamP = 'cha'
+      teamP = 'CHA'
+      teamID = 'CHA'
+      id = 'four'
     } else if(Team === 'CHI') {
-      teamP = 'chi'
+      teamP = 'CHI'
+      teamID = 'CHI'
+      id = 'five'
     } else if(Team === 'CLE') {
-      teamP = 'cle'
+      teamP = 'CLE'
+      teamID = 'CLE'
+      id = 'six'
     } else if(Team === 'DAL') {
-      teamP = 'dal'
+      teamP = 'DAL'
+      teamID = 'DAL'
+      id = 'seven'
     } else if(Team === 'DEN') {
-      teamP = 'den'
+      teamP = 'DEN'
+      teamID = 'DEN'
+      id = 'eight'
     } else if(Team === 'DET') {
-      teamP = 'det'
+      teamP = 'DET'
+      teamID = 'DET'
+      id = 'nine'
     } else if(Team === 'GS') {
-      teamP = 'gs'
+      teamP = 'GS'
+      teamID = 'GS'
+      id = 'ten'
     } else if(Team === 'HOU') {
-      teamP = 'hou'
+      teamP = 'HOU'
+      teamID = 'HOU'
+      id = 'eleven'
     } else if(Team === 'IND') {
-      teamP = 'ind'
+      teamP = 'IND'
+      teamID = 'IND'
+      id = 'twelve'
     } else if(Team === 'LAC') {
-      teamP = 'lac'
+      teamP = 'LAC'
+      teamID = 'LAC'
+      id = 'thirteen'
     } else if(Team === 'LAL') {
-      teamP = 'lal'
+      teamP = 'LAL'
+      teamID = 'LAL'
+      id = 'fourteen'
     } else if(Team === 'MEM') {
-      teamP = 'mem'
+      teamP = 'MEM'
+      teamID = 'MEM'
+      id = 'fifteen'
     } else if(Team === 'MIA') {
-      teamP = 'mia'
+      teamP = 'MIA'
+      teamID = 'MIA'
+      id = 'sixteen'
     } else if(Team === 'MIL') {
-      teamP = 'mil'
+      teamP = 'MIL'
+      teamID = 'MIL'
+      id = 'seventeen'
     } else if(Team === 'MIN') {
-      teamP = 'min'
+      teamP = 'MIN'
+      teamID = 'MIN'
+      id = 'eighteen'
     } else if(Team === 'NO') {
-      teamP = 'no'
+      teamP = 'NO'
+      teamID = 'NO' 
+      id ='nineteen'
     } else if(Team === 'NY') {
-      teamP = 'ny'
+      teamP = 'NY'
+      teamID = 'NY'
+      id = 'twenty'
     } else if(Team === 'OKC') {
-      teamP = 'okc'
+      teamP = 'OKC'
+      teamID = 'OKC'
+      id = 'twentyOne'
     } else if(Team === 'ORL') {
-      teamP = 'orl'
+      teamP = 'ORL'
+      teamID = 'ORL'
+      id = 'twentyTwo'
     } else if(Team === 'PHI') {
-      teamP = 'phi'
-    } else if(Team === 'PHX') {
-      teamP = 'phx'
+      teamP = 'PHI'
+      teamID = 'PHI'
+      id = 'twentyThree'
+    } else if(Team === 'PHO') {
+      teamP = 'PHO'
+      teamID = 'PHO'
+      id = 'twentyFour'
     } else if(Team === 'POR') {
-      teamP = 'por'
+      teamP = 'POR'
+      teamID = 'POR'
+      id = 'twentyFive'
     } else if(Team === 'SAC') {
-      teamP = 'sac'
+      teamP = 'SAC'
+      teamID = 'SAC'
+      id = 'twentySix'
     } else if(Team === 'SA') {
-      teamP = 'sa'
+      teamP = 'SA'
+      teamID = 'SA'
+      id = 'twentySeven'
     } else if(Team === 'TOR') {
-      teamP = 'tor'
+      teamP = 'TOR'
+      teamID = 'TOR'
+      id = 'twentyEight'
     } else if(Team === 'WAS') {
-      teamP = 'was'
+      teamP = 'WAS'
+      teamID = 'WAS'
+       id = 'twentyNine'
     } else if(Team === 'UTA'){
-      teamP = 'uta'
+      teamP = 'UTA'
+      teamID = 'UTA'
+      id = 'thirty'
      }   
+     
      
      
      // ADD CLASS FOR OPPONENT LOGO
     if(Opp === 'ATL') {
-      oppP = 'atl'
+      oppP = 'ATL'
+      oppId = 'zero'
     } else if(Opp === 'BOS') {
-      oppP = 'bos'
+      oppP = 'BOS'
+      oppId = 'one'
     } else if(Opp === 'BKN') {
-      oppP = 'bkn'
+      oppP = 'BKN'
+      oppId = 'two'
     } else if(Opp === 'CHA') {
-      oppP = 'cha'
+      oppP = 'CHA'
+      oppId = 'three'
     } else if(Opp === 'CHI') {
-      oppP = 'chi'
+      oppP = 'CHI'
+      oppId = 'four'
     } else if(Opp === 'CLE') {
-      oppP = 'cle'
+      oppP = 'CLE'
+      oppId = 'five'
     } else if(Opp === 'DAL') {
-      oppP = 'dal'
+      oppP = 'DAL'
+      oppId = 'six'
     } else if(Opp === 'DEN') {
-      oppP = 'den'
+      oppP = 'DEN'
+      oppId = 'seven'
     } else if(Opp === 'DET') {
-      oppP = 'det'
+      oppP = 'DET'
+      oppId = 'eight'
     } else if(Opp === 'GS') {
-      oppP = 'gs'
+      oppP = 'GS'
+      oppId = 'nine'
     } else if(Opp === 'HOU') {
-      oppP = 'hou'
+      oppP = 'HOU'
+      oppId = 'ten'
     } else if(Opp === 'IND') {
-      oppP = 'ind'
+      oppP = 'IND'
+      oppId = 'eleven'
     } else if(Opp === 'LAC') {
-      oppP = 'lac'
+      oppP = 'LAC'
+      oppId = 'twelve'
     } else if(Opp === 'LAL') {
-      oppP = 'lal'
+      oppP = 'LAL'
+      oppId = 'thirteen'
     } else if(Opp === 'MEM') {
-      oppP = 'mem'
+      oppP = 'MEM'
+      oppId = 'fourteen'
     } else if(Opp === 'MIA') {
-      oppP = 'mia'
+      oppP = 'MIA'
+      oppId = 'fifteen'
     } else if(Opp === 'MIL') {
-      oppP = 'mil'
+      oppP = 'MIL'
+      oppId = 'sixteen'
     } else if(Opp === 'MIN') {
-      oppP = 'min'
+      oppP = 'MIN'
+      oppId = 'seventeen'
     } else if(Opp === 'NO') {
-      oppP = 'no'
+      oppP = 'NO'
+      oppId = 'eighteen'
     } else if(Opp === 'NY') {
-      oppP = 'ny'
+      oppP = 'NY'
+      oppId = 'nineteen'
     } else if(Opp === 'OKC') {
-      oppP = 'okc'
+      oppP = 'OKC'
+      oppId = 'twenty'
     } else if(Opp === 'ORL') {
-      oppP = 'orl'
+      oppP = 'ORL'
+      oppId = 'twentOne'
     } else if(Opp === 'PHI') {
-      oppP = 'phi'
+      oppP = 'PHI'
+      oppId = 'twentyTwo'
     } else if(Opp === 'PHO') {
-      oppP = 'phx'
+      oppP = 'PHO'
+      oppId = 'twentyThree'
     } else if(Opp === 'POR') {
-      oppP = 'por'
+      oppP = 'POR'
+      oppId = 'twentyFour'
     } else if(Opp === 'SAC') {
-      oppP = 'sac'
+      oppP = 'SAC'
+      oppId = 'twentyFive'
     } else if(Opp === 'SA') {
-      oppP = 'sa'
+      oppP = 'SA'
+      oppId = 'twentySix'
     } else if(Opp === 'TOR') {
-      oppP = 'tor'
+      oppP = 'TOR'
+      oppId = 'twentySeven'
     } else if(Opp === 'WAS') {
-      oppP = 'was'
+      oppP = 'WAS'
+      oppId = 'twentyEight'
     } else if(Opp === 'UTA') {
-      oppP = 'uta'
+      oppP = 'UTA'
+      oppId = 'twentyNine'
     }
 
     
@@ -293,13 +389,14 @@
         cP = 'darkGreen'
     }
 
-
-
-  
-
+  $.map([id], function(index, value) {
+    console.log(index + ":" + value)
+  })
+     
+      
+      
    
-
-  
+   
 
     
 
@@ -320,7 +417,7 @@
 
 
     // RENDER TABLE TO THE DOM
-    $("table").append("<tr><td class='"+ teamP +"'>"+ Team +"</td><td class='"+ oppP +"'>" + Opp+ "</td><td>" + TeamTot +  "</td><td class='"+ SpreadP +"'>"+ Spread +"</td><td class='"+ PaceP +"'>"+ Pace +"</td><td class='"+ OppPaceP +"'>"+ OppPace +"</td><td class='"+ PaceDiffP +"'>"+ PaceDiff +"</td><td class='"+ DvpRankP +"'>"+ DvpRank +"</td><td class='"+ pgP +"'>"+ pg +"</td><td class='"+ sgP +"'>"+ sg +"</td><td class='"+ sfP +"'>"+ sf +"</td><td class='"+ pfP +"'>"+ pf +"</td><td class='"+ cP +"'>"+ c +"</td></tr>")
+    $("table").append("<tr><td class='"+ id+"'>"+ id+"</td><td class='"+oppId+"'>"+oppId+"</td><td id='"+ teamID+"' class='"+ teamP +"'>"+ Team +"</td><td class='"+ oppP +"'>" + Opp+ "</td><td>" + TeamTot +  "</td><td class='"+ SpreadP +"'>"+ Spread +"</td><td class='"+ PaceP +"'>"+ Pace +"</td><td class='"+ OppPaceP +"'>"+ OppPace +"</td><td class='"+ PaceDiffP +"'>"+ PaceDiff +"</td><td class='"+ DvpRankP +"'>"+ DvpRank +"</td><td class='"+ pgP +"'>"+ pg +"</td><td class='"+ sgP +"'>"+ sg +"</td><td class='"+ sfP +"'>"+ sf +"</td><td class='"+ pfP +"'>"+ pf +"</td><td class='"+ cP +"'>"+ c +"</td></tr>")
 
 
     // SORT TABLE * THIS IS SET TO [[5,1]] WHIH SORTS THE 5TH COLUMN DESCENDING *
@@ -330,6 +427,26 @@
         sortList: [[6,1]]
       })
     })
+
+    
+
+   
+
+    // $.each([id], function( index,value) {
+    //   console.log(value)
+
+    //   if(id === 'one'){
+    //     let game = `<div class="gameOne"><p>${teamP}</p></div>`
+    //     $('#gameOne').html(game).css("display", "inline-block")
+        
+    //   } else if(id === 'three') {
+    //     let game = `<div class="gameOne"><p>${teamP}</p></div>`
+    //     $('#gameOne').html(game).css("display", "inline-block")
+    //   }
+        
+      
+    // })
+    
    })  // END FUNCTION
 
 
@@ -364,6 +481,8 @@
   setTimeout(function(){
     window.location.href = window.location.href;
 },300000)
+
+
 
 
 

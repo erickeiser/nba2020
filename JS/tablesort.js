@@ -49,126 +49,131 @@
 
   // ADD CLASS FOR TEAM LOGO
     if(Team === 'ATL') {
-      teamP = 'atl'
+      teamP = 'ATL'
     } else if(Team === 'BOS') {
-      teamP = 'bos'
+      teamP = 'BOS'
     } else if(Team === 'BKN') {
-      teamP = 'bkn'
+      teamP = 'BKN'
     } else if(Team === 'CHA') {
-      teamP = 'cha'
+      teamP = 'CHA'
     } else if(Team === 'CHI') {
-      teamP = 'chi'
+      teamP = 'CHI'
     } else if(Team === 'CLE') {
-      teamP = 'cle'
+      teamP = 'CLE'
     } else if(Team === 'DAL') {
-      teamP = 'dal'
+      teamP = 'DAL'
     } else if(Team === 'DEN') {
-      teamP = 'den'
+      teamP = 'DEN'
     } else if(Team === 'DET') {
-      teamP = 'det'
+      teamP = 'DET'
     } else if(Team === 'GSW') {
-      teamP = 'gsw'
+      teamP = 'GSW'
     } else if(Team === 'HOU') {
-      teamP = 'hou'
+      teamP = 'HOU'
     } else if(Team === 'IND') {
-      teamP = 'ind'
+      teamP = 'IND'
     } else if(Team === 'LAC') {
-      teamP = 'lac'
+      teamP = 'LAC'
     } else if(Team === 'LAL') {
-      teamP = 'lal'
+      teamP = 'LAL'
     } else if(Team === 'MEM') {
-      teamP = 'mem'
+      teamP = 'MEM'
     } else if(Team === 'MIA') {
-      teamP = 'mia'
+      teamP = 'MIA'
     } else if(Team === 'MIL') {
-      teamP = 'mil'
+      teamP = 'MIL'
     } else if(Team === 'MIN') {
-      teamP = 'min'
+      teamP = 'MIN'
     } else if(Team === 'NOP') {
-      teamP = 'nop'
+      teamP = 'NOP'
     } else if(Team === 'NYK') {
-      teamP = 'nyk'
+      teamP = 'NYK'
     } else if(Team === 'OKC') {
-      teamP = 'okc'
+      teamP = 'OKC'
     } else if(Team === 'ORL') {
-      teamP = 'orl'
+      teamP = 'ORL'
     } else if(Team === 'PHI') {
-      teamP = 'phi'
+      teamP = 'PHI'
     } else if(Team === 'PHX') {
-      teamP = 'phx'
+      teamP = 'PHX'
     } else if(Team === 'POR') {
-      teamP = 'por'
+      teamP = 'POR'
     } else if(Team === 'SAC') {
-      teamP = 'sac'
+      teamP = 'SAC'
     } else if(Team === 'SAS') {
-      teamP = 'sas'
+      teamP = 'SAS'
     } else if(Team === 'TOR') {
-      teamP = 'tor'
+      teamP = 'TOR'
     } else if(Team === 'WAS') {
-      teamP = 'was'
+      teamP = 'WAS'
     } else if(Team === 'UTA'){
-      teamP = 'uta'
-    }    // ADD CLASS FOR OPPONENT LOGO
+      teamP = 'WAS'
+    }
+    
+   
+    
+    // ADD CLASS FOR OPPONENT LOGO
     if(Opp === 'ATL') {
-      oppP = 'atl'
+      oppP = 'ATL'
+      
     } else if(Opp === 'BOS') {
-      oppP = 'bos'
+      oppP = 'BOS'
     } else if(Opp === 'BKN') {
-      oppP = 'bkn'
+      oppP = 'BKN'
     } else if(Opp === 'CHA') {
-      oppP = 'cha'
+      oppP = 'CHA'
     } else if(Opp === 'CHI') {
-      oppP = 'chi'
+      oppP = 'CHI'
     } else if(Opp === 'CLE') {
-      oppP = 'cle'
+      oppP = 'CLE'
     } else if(Opp === 'DAL') {
-      oppP = 'dal'
+      oppP = 'DAL'
     } else if(Opp === 'DEN') {
-      oppP = 'den'
+      oppP = 'DEN'
     } else if(Opp === 'DET') {
-      oppP = 'det'
+      oppP = 'DET'
     } else if(Opp === 'GSW') {
-      oppP = 'gsw'
+      oppP = 'GSW'
     } else if(Opp === 'HOU') {
-      oppP = 'hou'
+      oppP = 'HOU'
     } else if(Opp === 'IND') {
-      oppP = 'ind'
+      oppP = 'IND'
     } else if(Opp === 'LAC') {
-      oppP = 'lac'
+      oppP = 'LAC'
     } else if(Opp === 'LAL') {
-      oppP = 'lal'
+      oppP = 'LAL'
     } else if(Opp === 'MEM') {
-      oppP = 'mem'
+      oppP = 'MEM'
     } else if(Opp === 'MIA') {
-      oppP = 'mia'
+      oppP = 'MIA'
     } else if(Opp === 'MIL') {
-      oppP = 'mil'
+      oppP = 'MIL'
     } else if(Opp === 'MIN') {
-      oppP = 'min'
+      oppP = 'MIN'
     } else if(Opp === 'NOP') {
-      oppP = 'nop'
+      oppP = 'NOP'
     } else if(Opp === 'NYK') {
-      oppP = 'nyk'
+      oppP = 'NYK'
     } else if(Opp === 'OKC') {
-      oppP = 'okc'
+      oppP = 'OKC'
     } else if(Opp === 'ORL') {
-      oppP = 'orl'
+      oppP = 'ORL'
     } else if(Opp === 'PHI') {
-      oppP = 'phi'
+      oppP = 'PHI'
     } else if(Opp === 'PHX') {
-      oppP = 'phx'
+      oppP = 'PHX'
     } else if(Opp === 'POR') {
-      oppP = 'por'
+      oppP = 'POR'
     } else if(Opp === 'SAC') {
-      oppP = 'sac'
+      oppP = 'SAC'
     } else if(Opp === 'SAS') {
-      oppP = 'sas'
+      oppP = 'SAS'
     } else if(Opp === 'TOR') {
-      oppP = 'tor'
+      oppP = 'TOR'
     } else if(Opp === 'WAS') {
-      oppP = 'was'
+      oppP = 'WAS'
     } else if(Opp === 'UTA') {
-      oppP = 'uta'
+      oppP = 'UTA'
     }
     // SALARIES
     if(Salary >= 9500) {
@@ -205,7 +210,7 @@
     } else if(Value => 5 && Value <= 5.5) {
       valP = 'low'
     }
-    
+
     //  POSITION FILTER CLASSES
     if(Pos === 'PG') {
       posP = 'pg'
@@ -281,10 +286,10 @@
 
 
     
-
+    
     
   
-
+  
   
 
 
@@ -294,7 +299,7 @@
 
 
     // RENDER TABLE TO THE DOM
-    $("table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td class='"+ posP +"'>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + salP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td class='"+ valP +"'>"+ Value +"</td></tr>")
+    $("#ex-table").append("<tr class='"+ rowP +"'><td>"+ Player +"</td><td class='"+ posP +"'>" + Pos+ "</td><td class='"+  teamP+"'>" + Team +  "</td>"+ "<td class='"+ gameP + "'>"+ Game +"</td>" +"<td class='"+ oppP +"'>"+ Opp +"</td><td class='" + salP+"'>"+ Salary +"</td><td class='"+ projP +"'>"+ Projection +"</td><td class='"+ devP +"'>"+ dvp +"</td><td>"+ TmTTL +"</td><td>"+ Floor +"</td><td>"+ Ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usg +"</td><td>"+ mpg +"</td><td class='"+ minP +"'>"+ pmin +"</td><td class='"+ valP +"'>"+ Value +"</td></tr>")
 
 
     // SORT TABLE * THIS IS SET TO [[5,1]] WHIH SORTS THE 5TH COLUMN DESCENDING *
@@ -304,7 +309,13 @@
         sortList: [[5,1]]
       })
     })
-  })
+
+    
+  
+  
+   
+})
+
 
 
 
@@ -334,6 +345,9 @@
   setTimeout(function(){
     window.location.href = window.location.href;
 },300000)
+
+
+
 
 
 

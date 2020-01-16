@@ -1,28 +1,42 @@
-* {
-  margin: 0;
-  padding: 0;
+#matchups {
+    margin-bottom: 150px;
+}
+#matchup_table {
+    display: none;
 }
 
-th, td {
+#page_links {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#projectionToggle {
+    display: none;
+}
+#games p {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    font-size: 2rem;
 }
 
-td {
-    border: 1px solid #ccc;
+.gameOne, .gameTwo, .gameThree, .gameFour, .gameFive, .gameSix, .gameSeven, .gameEight, .gameNine, .gameTen, .gameEleven, .gameTwelve, .gameThirteen, .gameFourteen, .gameFifteen {
+    height: 100%;
+    width: 10%;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid dodgerblue;
+    display: none;
 }
 
-.main-table {
-  margin-top: 5%;
-}
-
-/* HEADING */
-.main-heading {
-  text-align: center;
-  font-size: 4.4rem;
+.hide {
+    display: none;
 }
 
 
-/* Team and Opponent images */
+
+
+
 
 .ATL {
     text-indent: -9999px;
@@ -142,7 +156,6 @@ td {
     text-indent: -9999px;
     text-align: center;
     background: url("/images/new-york-knicks-logo@logotyp.us.svg") no-repeat;
-    background-size: cover;
   }
   
   .OKC {
@@ -151,12 +164,12 @@ td {
     background: url("/images/okc-thunder-logo@logotyp.us.svg") no-repeat;
   }
   
-  .ORL {
+  /* .ORL {
     text-indent: -9999px;
     text-align: center;
     background: url("/images/okc-thunder-logo@logotyp.us.svg") no-repeat;
   }
-  
+   */
   .PHI {
     text-indent: -9999px;
     text-align: center;
@@ -205,55 +218,4 @@ td {
     text-align: center;
     background: url("/images/washington-wizards-logo@logotyp.us.svg") no-repeat;
   }
-
-  /* SPREAD COLORS */
-  .negative {
-      background-color: #E67C73;
-  }
-  .positive {
-      background-color: #57BB8A;
-  }
-
-  /* DVP COLORS  */
-  .darkRed {
-      background-color: #F86C6A;
-  }
-
-  .lightRed {
-      background-color: #F98A72;
-  }
-
-  .darkYellow {
-      background-color: #FBB37A;
-  }
-  
-  .lightYellow {
-      background-color: #FEE181;
-  }
-
-  .darkGreen {
-      background-color: #6AC07D;
-  }
-
-  .lightGreen {
-      background-color: #A9D380;
-  }
-
-#games .game_block {
-  height: 100px;
-  width: 100px;
-  display: none;
-  background-color: dodgerblue;
-}
-
-#games p {
-  font-size: 4rem;
-}
-
-
-
-#space {
-  margin-bottom: 800px;
-}
-
   
