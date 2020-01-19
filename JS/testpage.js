@@ -86,73 +86,12 @@ projection.on("child_added", snap => {
         teamO = 'WAS'
       }
 
-    //   if(team === 'ATL') {
-    //     teamP = 'ATL'
-    //   } else if(team === 'BOS') {
-    //     teamP = 'BOS'
-    //   } else if(team === 'BKN') {
-    //     teamP = 'BKN'
-    //   } else if(team === 'CHA') {
-    //     teamP = 'CHA'
-    //   } else if(team === 'CHI') {
-    //     teamP = 'CHI'
-    //   } else if(team === 'CLE') {
-    //     teamP = 'CLE'
-    //   } else if(team === 'DAL') {
-    //     teamP = 'DAL'
-    //   } else if(team === 'DEN') {
-    //     teamP = 'DEN'
-    //   } else if(team === 'DET') {
-    //     teamP = 'DET'
-    //   } else if(team === 'GS') {
-    //     teamP = 'GS'
-    //   } else if(team === 'HOU') {
-    //     teamP = 'HOU'
-    //   } else if(team === 'IND') {
-    //     teamP = 'IND'
-    //   } else if(team === 'LAC') {
-    //     teamP = 'LAC'
-    //   } else if(team === 'LAL') {
-    //     teamP = 'LAL'
-    //   } else if(team === 'MEM') {
-    //     teamP = 'MEM'
-    //   } else if(team === 'MIA') {
-    //     teamP = 'MIA'
-    //   } else if(team === 'MIL') {
-    //     teamP = 'MIL'
-    //   } else if(team === 'MIN') {
-    //     teamP = 'MIN'
-    //   } else if(team === 'NO') {
-    //     teamP = 'NO'
-    //   } else if(team === 'NY') {
-    //     teamP = 'NY'
-    //   } else if(team === 'OKC') {
-    //     teamP = 'OKC'
-    //   } else if(team === 'ORL') {
-    //     teamP = 'ORL'
-    //   } else if(team === 'PHI') {
-    //     teamP = 'PHI'
-    //   } else if(team === 'PHO') {
-    //     teamP = 'PHO'
-    //   } else if(team === 'POR') {
-    //     teamP = 'POR'
-    //   } else if(team === 'SAC') {
-    //     teamP = 'SAC'
-    //   } else if(team === 'SA') {
-    //     teamP = 'SA'
-    //   } else if(team === 'TOR') {
-    //     teamP = 'TOR'
-    //   } else if(team === 'WAS') {
-    //     teamP = 'WAS'
-    //   } else if(team === 'UTA'){
-    //     teamP = 'WAS'
-    //   }
       
      
       
       // ADD CLASS FOR OPPONENT LOGO
       if(opp === 'ATL') {
-        opp = 'ATL'
+        oppO = 'ATL'
         
       } else if(opp === 'BOS') {
         oppO = 'BOS'
@@ -214,42 +153,80 @@ projection.on("child_added", snap => {
         oppO = 'UTA'
       }
 
-      
-
-    if(id === 1) {
-        $('.gameOne').show()
-        $('#gameOne').append("<div><p class='"+teamO+"'>"+ team +"</p><p>"+gameP+"</p><p class='"+ oppO +"'>"+ opp +"</p></div>")}
-     
+      if(id === 1) {
+          $('#games').append(`<button id="gameOne" class="btn btn-lg gameOne"><p class="teamOne">${teamO}</p></button>`)
+    }
     if(id === 2) {
-        $('#gameTwo').show()
-        $('#gameTwo').append("<div><p class='"+teamO+"'>"+ team +"</p><p>"+gameP+"</p><p class='"+ oppO +"'>"+ opp +"</p></div>")}
+        $('#games').append(`<button id="gameTwo" class="btn btn-lg gameTwo"><p class="teamTwo">${teamO}</p></button>`)
+    }
 
     if(id === 3) {
-        $('#gameThree').show()
-        $('#gameThree').append("<div><p class='"+teamO+"'>"+ team +"</p><p>"+gameP+"</p><p class='"+ oppO +"'>"+ opp +"</p></div>")}
+        $('#games').append(`<button id="gameThree" class="btn btn-lg gameThree"><p class="teamThree">${teamO}</p></button>`)
+    }
+    if(id === 4) {
+        $('#games').append(`<button id="gameFour" class="btn btn-lg gameFour"><p class="teamFour">${teamO}</p></button>`)
+    }
 
-    if(id ==4 ) {
-        $('#gameFour').show()
-        $('#gameFour').append("<div><p class='"+teamO+"'>"+ team +"</p><p>"+gameP+"</p><p class='"+ oppO +"'>"+ opp +"</p></div>")}
+    if(id === 5) {
+        $('#games').append(`<button id="gameFive" class="btn btn-lg gameFive"><p class="teamFive">${teamO}</p></button>`)
+    }
 
-    if(id == 6 ) {
-        $('#gameSix').show()
-        $('#gameSix').append("<div><p class='"+teamO+"'>"+ team +"</p><p>"+gameP+"</p><p class='"+ oppO +"'>"+ opp +"</p></div>")}
-    })
+    if(id === 6) {
+        $('#games').append(`<button id="gameSix" class="btn btn-lg gameSix"><p class="teamSix">${teamO}</p></button>`)
+    }
 
+    if(id === 7) {
+        $('#games').append(`<button id="gameSeven" class="btn btn-lg gameSeven"><p class="teamSeven">${teamO}</p></button>`)
+    }
 
-   
-     
+    if(id === 8) {
+        $('#games').append(`<button id="gameEight" class="btn btn-lg gameEight"><p class="teamEight">${teamO}</p></button>`)
+    }
+
+    if(id === 9) {
+        $('#games').append(`<button id="gameNine" class="btn btn-lg gameNine"><p class="teamNine">${teamO}</p></button>`)
+    }
+
+    if(id === 10) {
+        $('#games').append(`<button id="gameTen" class="btn btn-lg gameTen"><p class="teamTen">${teamO}</p></button>`)
+    }
+
+    if(id === 11) {
+        $('#games').append(`<button id="gameEleven" class="btn btn-lg gameEleven"><p class="teamEleven">${teamO}</p></button>`)
+    }
+
+    if(id === 12) {
+        $('#games').append(`<button id="gameTwelve" class="btn btn-lg gameTwelve"><p class="teamTwelve">${teamO}</p></button>`)
+    }
+
+    if(id === 13) {
+        $('#games').append(`<button id="gameThirteen" class="btn btn-lg gameThirteen"><p class="teamThirteen">${teamO}</p></button>`)
+    }
+
+    if(id === 14) {
+        $('#games').append(`<button id="gameFourteen" class="btn btn-lg gameFourteen"><p class="teamFourteen">${teamO}</p></button>`)
+    }
+
+    if(id === 15) {
+        $('#games').append(`<button id="gameFifteen" class="btn btn-lg gameFifteen"><p class="teamFifteen">${teamO}</p></button>`)
+    }
+
+  
+
+    
+    
+
+    
+})
 
     
       
+          
 
+    
+     
 
-
-
-
-
-  // ***************** PROJECTION TABLE *********************************
+                // ***************** PROJECTION TABLE *********************************
 var projection = firebase.database().ref().child("1FHdvApAOaE4zTlcR66Xkh3mmmaU0TPsgWqdXCY1pT4E/projection")
 projection.on("child_added", snap => {
     let id = snap.child('id').val()
@@ -274,10 +251,76 @@ projection.on("child_added", snap => {
     oppP = 'opp'
     idP = 'id'
     pMinP = 'min'
-    rowP = 'rows'
+    rowP = ''
+    posP = 'pos'
+    activeP = ''
+
+    // ******************** POSTION FILTER BUTTONS *******************//
+   if(position === 'PG') {
+       posP = 'pg pgp'
+       rowP = 'pg'
+   } else if(position === 'SG') {
+       posP = 'sg sgp'
+       rowP = 'sg '
+   } else if(position === 'SF') {
+       posP = 'sf sfp'
+       rowP = 'sf'
+   } else if(position === 'PF') {
+       posP = 'pf pfp'
+       rowP = 'pf'
+   } else {
+       posP = 'c cp'
+       rowP = 'c'
+   }
+   $('#all').click(function() {
+       $('.pg').show()
+       $('.sg').show()
+       $('.sf').show()
+       $('.pf').show()
+       $('.c').show()
+   })
+
+   $('#pg').click(function(){
+       $('.pg').show()
+       $('.sg').hide()
+       $('.sf').hide()
+       $('.pf').hide()
+       $('.c').hide()
+   })
+   $('#sg').click(function(){
+    $('.pg').hide()
+    $('.sg').show()
+    $('.sf').hide()
+    $('.pf').hide()
+    $('.c').hide()
+})
+$('#sf').click(function(){
+    $('.pg').hide()
+    $('.sg').hide()
+    $('.sf').show()
+    $('.pf').hide()
+    $('.c').hide()
+})
+$('#pf').click(function(){
+    $('.pg').hide()
+    $('.sg').hide()
+    $('.sf').hide()
+    $('.pf').show()
+    $('.c').hide()
+})
+$('#c').click(function(){
+    $('.pg').hide()
+    $('.sg').hide()
+    $('.sf').hide()
+    $('.pf').hide()
+    $('.c').show()
+})
+
+
 
     if(team === 'ATL') {
        teamP = 'ATL'
+       
      } else if(team === 'BOS') {
        teamP = 'BOS'
      } else if(team === 'BKN') {
@@ -290,6 +333,7 @@ projection.on("child_added", snap => {
        teamP = 'CLE'
      } else if(team === 'DAL') {
        teamP = 'DAL'
+    //    rowP = 'dal'
      } else if(team === 'DEN') {
        teamP = 'DEN'
      } else if(team === 'DET') {
@@ -298,6 +342,7 @@ projection.on("child_added", snap => {
        teamP = 'GS'
      } else if(team === 'HOU') {
        teamP = 'HOU'
+    //    activeP = 'active'
      } else if(team === 'IND') {
        teamP = 'IND'
      } else if(team === 'LAC') {
@@ -312,6 +357,7 @@ projection.on("child_added", snap => {
        teamP = 'MIL'
      } else if(team === 'MIN') {
        teamP = 'MIN'
+    //    rowP = 'min'
      } else if(team === 'NO') {
        teamP = 'NO'
      } else if(team === 'NY') {
@@ -328,8 +374,8 @@ projection.on("child_added", snap => {
        teamP = 'POR'
      } else if(team === 'SAC') {
        teamP = 'SAC'
-     } else if(team === 'SA') {
-       teamP = 'SA'
+     } else if(team === 'SAS') {
+       teamP = 'SAS'
      } else if(team === 'TOR') {
        teamP = 'TOR'
      } else if(team === 'WAS') {
@@ -394,8 +440,8 @@ projection.on("child_added", snap => {
        oppP = 'POR'
      } else if(opp === 'SAC') {
        oppP = 'SAC'
-     } else if(opp === 'SA') {
-       oppP = 'SA'
+     } else if(opp === 'SAS') {
+       oppP = 'SAS'
      } else if(opp === 'TOR') {
        oppP = 'TOR'
      } else if(opp === 'WAS') {
@@ -404,12 +450,23 @@ projection.on("child_added", snap => {
        oppP = 'UTA'
      }
 
-     if(projectedMinutes <= 0) {
-         rowP = 'hide'
-     }
+     
 
     
-  
+
+    
+
+
+       
+      
+
+  if(projectedMinutes <= 0) {
+    rowP = 'hide'
+}
+
+    
+    
+   
 
      
 
@@ -417,7 +474,17 @@ projection.on("child_added", snap => {
     
 
 
-    $('#projections').append("<tr class='"+rowP+"'><td>"+ value +"</td><td>"+ player +"</td><td>"+ position +"</td><td class='"+ teamP +"'>"+ team +"</td><<td>"+ game +"</td><td>"+ opp +"</td><td>"+ "$"+salary +"</td><td>"+  projection+"</td><td>"+ dvp +"</td><td>"+ teamtot +"</td><td>"+ floor +"</td><td>"+ ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usage +"</td><td>"+ minPerGame +"</td><td class='"+ rowP +"'>"+ projectedMinutes +"</td></tr>")
+    $('#projections').append("<tr id='"+ activeP +"' class='"+rowP+"'><td>"+ value +"</td><td>"+ player +"</td><td class='"+ posP +"'>"+ position +"</td><td class='"+ teamP +"'>"+ team +"</td><td class='"+ oppP +"'>"+ opp +"</td><td>"+ "$"+salary +"</td><td>"+  projection+"</td><td>"+ dvp +"</td><td>"+ teamtot +"</td><td>"+ floor +"</td><td>"+ ceiling +"</td><td>"+ fppg +"</td><td>"+ fppm +"</td><td>"+ usage +"</td><td>"+ minPerGame +"</td><td class='"+ rowP +"'>"+ projectedMinutes +"</td></tr>")
+
+
+    // if($("#gameOne").val() === 'HOU') {
+    //    console.log(teamP)
+    // } else {
+       
+    // }
+console.log($('.teamOne').val())
+    
+
     })
 
 
@@ -582,7 +649,6 @@ projection.on("child_added", snap => {
       }
 
     
-      
       
       
 

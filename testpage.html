@@ -21,26 +21,20 @@
               <button id="matchupToggle" class="btn btn-primary pageToggle">Matchups</button>
               <button id="projectionToggle" class="btn btn-primary pageToggle">Projections</button>
             </div>
-            <div id="games">
-                <button id="gameOne" class="btn btn-lg gameOne gameOneBox"></button>
-                <button id="gameTwo" class="btn btn-lg gameTwo"></button>
-                <button id="gameThree" class="btn btn-lg gameThree"></button>
-                <button id="gameFour" class="btn btn-lg gameFour"></button>
-                <button id="gameFive" class="btn btn-lg gameFive"></button>
-                <button id="gameSix" class="btn btn-lg gameSix"></button>
-                <button id="gameSeven" class="btn btn-lg gameSeven"></button>
-                <button id="gameEight" class="btn btn-lg gameEight"></button>
-                <button id="gameNine" class="btn btn-lg gameNine"></button>
-                <button id="gameTen" class="btn btn-lg gameTen"></button>
-                <button id="gameEleven" class="btn btn-lg gameEleven"></button>
-                <button id="gameTwelve" class="btn btn-lg gameTwelve"></button>
-                <button id="gameThirteen" class="btn btn-lg gameThirteen"></button>
-                <button id="gameFourteen" class="btn btn-lg gameFourteen"></button>
-                <button id="gameFifteen" class="btn btn-lg gameFifteen"></button>
-            </div>
+            <div id="games"></div> <!-- DIV TO HOLD THE GAME BOXES-->
+              
              
               
           <div id="projection_table" class="projection_table">
+              <!-- POSITION FILTERS -->
+              <div id="positions">
+                  <button id="all" class="btn btn-lg btn-primary">All</button>
+                  <button id="pg" class="btn btn-lg btn-primary">PG</button>
+                  <button id="sg" class="btn btn-lg btn-primary">SG</button>
+                  <button id="sf" class="btn btn-lg btn-primary">SF</button>
+                  <button id="pf" class="btn btn-lg btn-primary">PF</button>
+                  <button id="c" class="btn btn-lg  btn-primary">C</button>
+              </div>
               <table id="projections" class="table">
                   <thead>
                       <tr>
@@ -48,7 +42,6 @@
                           <th>Player</th>
                           <th>Position</th>
                           <th>TM</th>
-                          <th>Game</th>
                           <th>Opp</th>
                           <th>Salary</th>
                           <th>Projection</th>
@@ -61,7 +54,8 @@
                           <th>Usage</th>
                           <th>MPG</th>
                           <th>P Min</th>
-                          <th>FPPM</th>
+                          
+                          
                           
 
                       </tr>
@@ -108,5 +102,6 @@
 
     <script src="/JS/testpage.js"></script>
     <script src="/JS/projection.js"></script>
+    <script src="/JS/filtable.min.js"></script>
   </body>
 </html>

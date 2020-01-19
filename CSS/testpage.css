@@ -26,11 +26,39 @@
     display: inline-block;
     margin: 5px;
     border: 2px solid dodgerblue;
-    display: none;
+    /* display: none; */
 }
 
 .hide {
     display: none;
+}
+
+#positions {
+    text-align: center;
+    
+}
+#positions button {
+    margin: 0 15px;
+    font-size: 2rem;
+}
+
+.pgp {
+    background: gold;
+}
+.sgp {
+    background-color: lightgreen;
+}
+
+.sfp {
+    background-color: lightpink;
+}
+
+.pfp {
+    background-color: lightslategray;
+}
+
+.cp {
+    background-color: limegreen;
 }
 
 
@@ -164,12 +192,12 @@
     background: url("/images/okc-thunder-logo@logotyp.us.svg") no-repeat;
   }
   
-  /* .ORL {
+  .ORL {
     text-indent: -9999px;
     text-align: center;
-    background: url("/images/okc-thunder-logo@logotyp.us.svg") no-repeat;
+    background: url("/images/orlando-magic.svg") no-repeat;
   }
-   */
+  
   .PHI {
     text-indent: -9999px;
     text-align: center;
@@ -195,7 +223,7 @@
     background: url("/images/sacramento-kings-logo@logotyp.us.svg") no-repeat;
   }
   
-  .SA {
+  .SA, .SAS {
     text-indent: -9999px;
     text-align: center;
     background: url("/images/spurs-logo@logotyp.us.svg") no-repeat;
